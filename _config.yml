@@ -6,7 +6,7 @@ title: chenfeng wei                           # used in <title> tag & site heade
 author: 魏辰峰                       # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Talk is cheap, show me the code.
-slogan: 修身自强 名配尧禹                        # used in site header, beside title
+slogan: 道虽迩 不行不至                        # used in site header, beside title
 avatar: /i/avatar.jpg                       # used as portrait in site header
 banner: /i/bg.jpg                           # used as background in site header
 url:              # used by plugins to generate feed.xml and sitemap.xml
@@ -34,7 +34,7 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
-  - title: NUll
+  - title: to be continue
     teaser: 
     url: 
     role: Creator
