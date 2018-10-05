@@ -6,12 +6,12 @@ title: chenfeng wei                            # used in <title> tag & site head
 author: 魏辰峰                       # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Talk is cheap, show me the code.
-slogan: 圣可积而致，途之人可以为禹。                           # used in site header, beside title
+slogan: 居必择乡，游必就士                           # used in site header, beside title
 avatar: /i/avatar.jpg                       # used as portrait in site header
 banner: /i/bg.jpg                           # used as background in site header
-url: http://solana.ryanlue.com              # used by plugins to generate feed.xml and sitemap.xml
+url:              # used by plugins to generate feed.xml and sitemap.xml
 baseurl: ''                                 # prepended to all absolute filepaths
-repo: https://github.com/rlue/jekyll-solana # used in footer
+repo: https://github.com/vincentweikey # used in footer
 
 # Objects listed here will appear in the main nav menu.
 # Exceeding four items may cause problems on the desktop (>900px wide) layout.
@@ -23,13 +23,13 @@ nav_menu:
     url: /projects
     icon: /i/icons.svg#portfolio
   - name: GitHub
-    url: https://github.com/rlue/
+    url: https://github.com/vincentweikey
     icon: /i/icons.svg#github
     outbound: true      # this key sets a link to open in a new window.
   - name: Contact
     scheme: mailto      # these keys enable email obfuscation.
-    handle: hello       # you know, to protect you from bots. (handle and domain
-    domain: github.com  # are separated in case bots crawl GitHub repos, too.)
+    handle: chenfengwei2yc       # you know, to protect you from bots. (handle and domain
+    domain: gmail.com  # are separated in case bots crawl GitHub repos, too.)
     icon: /i/icons.svg#email
 
 # Objects listed here will appear on the /projects.html page.
