@@ -2,11 +2,11 @@
 # Theme Customization #
 #######################
 
-title: chenfeng wei                            # used in <title> tag & site header
+title: chenfeng                             # used in <title> tag & site header
 author: 魏辰峰                       # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Talk is cheap, show me the code.
-slogan: 居必择乡，游必就士                           # used in site header, beside title
+slogan: wei                         # used in site header, beside title
 avatar: /i/avatar.jpg                       # used as portrait in site header
 banner: /i/bg.jpg                           # used as background in site header
 url:              # used by plugins to generate feed.xml and sitemap.xml
