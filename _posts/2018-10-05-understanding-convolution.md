@@ -5,7 +5,7 @@ category: intro
 tags: [Theory,CV]
 ---
 
-简介
+# 简介
 
 ## 写在前面的基础知识
 
@@ -18,10 +18,8 @@ tags: [Theory,CV]
 
 ### 相关阅读 
 
-* 推荐一下Christopher Olah 的理解卷积的blog:
-	http://colah.github.io/posts/2014-07-Understanding-Convolutions/
-* 数学的论证可以看:
-	https://www.dsprelated.com/freebooks/mdft/Convolution.html
+* [推荐一下Christopher Olah 的理解卷积的blog]:http://colah.github.io/posts/2014-07-Understanding-Convolutions/
+* [数学的论证参考]:https://www.dsprelated.com/freebooks/mdft/Convolution.html
 
 ### 本文将介绍卷积在计算机图像处理上的应用，所以特定限定条件:
 1. 离散的 
@@ -32,20 +30,20 @@ tags: [Theory,CV]
 
 ---
 
-特征抽取
+# 特征抽取
 
 ---
-1x1卷积
+# 1x1卷积
 
 ---
-异形卷积
+# 异形卷积
 
 ---
 
-引用
+# 引用
 
 ---
-声明
+# 声明
 
 
 ---
