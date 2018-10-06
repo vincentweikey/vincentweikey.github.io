@@ -48,7 +48,7 @@ tags: [Theory,CV]
 
 2. im2col
 	* 私以为最主流的实现方式（caffe/MXNet 等使用的是这种方式）
-	* 一般来说速度较快
+	* 一般来说速度较快(空间换时间)
 	* 卷积过程转化成了 GEMM 过程（被各种极致优化）
 	* 可以参考
 		<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
@@ -65,20 +65,43 @@ tags: [Theory,CV]
 	* 思想: 更多的加法计算来减少乘法计算
 	* 原因: 乘法计算的时钟周期数要大于加法计算的时钟周期数）
 
-
-
+### talk is cheap show me the code !
 
 ### 2.2 方法一: 滑动窗口实现
+	
+```python
+
+import numpy as np 
+
+# calculate output shape 
+def calc_shape(input_, kernal_, stride = 1, padding = 0):
+	H_out = 1+(input_.shape[0]+2*padding-kernal_.shape[0])/stride
+	W_out = 1+(input_.shape[1]+2*padding-kernal_.shape[1])/stride
+	return H_out,W_out
+
+def conv2d_naive(input_, kernal_, stride =1, padding = 0):
+	# calculate Convolution param 
+	out = None
+	H,W = input_.shape
+	x_pad = np.zeros((H+2*padding,W+2*padding))
+	x_pad[padding:padding+H,padding:padding+W] = input_
+	H_out,W_out = calc_shape(input_, kernal_, stride, padding)
+	out = np.zeros((H_out,W_out))
+	# Convolution
+	for m in xrange(H_out):
+		for n in xrange(W_out):
+			out[m,n] = np.sum(x_pad[m*stride:m*stride+kernal_.shape[0],n*stride:n*stride+kernal_.shape[1]] *  kernal_)
+	return out
+
+```
 
 ### 2.3 方法二: im2col方法实现
 
+
 ### 2.4 方法三: Winograd 方法
 
+
 ### 2.4 方法四： 
----
-# 代码实现
-
-
 ---
 
 # 特征抽取
