@@ -26,7 +26,7 @@ tags: [Theory,CNN]
 
 	<https://www.dsprelated.com/freebooks/mdft/Convolution.html>
 
-### 1.2 本文将介绍卷积在计算机图像处理上的应用，所以限定讨论条件
+### 1.3 本文将介绍卷积在计算机图像处理上的应用，所以限定讨论条件
 
 * 离散的 
 * 2-维卷积 (注: 2-维的卷积相当于depth=1 的 3-维的卷积)
@@ -78,9 +78,9 @@ tags: [Theory,CNN]
 
 ### 2.3 代码实现（python 2.7 with numpy）
 
-### YOU : Talk is cheap show me the code !
+### Talk is cheap show me the code !
 
-##### 2.3.1 方法一: 滑动窗口实现
+### 2.3.1 方法一: 滑动窗口实现
 	
 ```python
 import numpy as np 
@@ -107,13 +107,13 @@ def conv2d_naive(input_, kernal_, stride =1, padding = 0):
 
 ```
 
-##### 2.3.2 方法二: im2col方法实现
+### 2.3.2 方法二: im2col方法实现
 
 
-##### 2.3.3 方法三: Winograd方法实现
+### 2.3.3 方法三: Winograd方法实现
 
 
-##### 2.3.4 方法四: FTT方法实现
+### 2.3.4 方法四: FTT方法实现
 ---
 
 # 特征抽取
