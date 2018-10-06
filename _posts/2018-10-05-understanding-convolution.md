@@ -1,8 +1,8 @@
 ---
 title: 卷积神经网络 - 卷积
-teaser: 1.卷积基础概念 2.不同的卷积实现方式和原理 3.个人的一点卷积使用技巧
+teaser: 本文简单介绍卷积基础概念，不同的卷积实现方式和原理，一些卷积使用技巧
 category: Computer Vision
-tags: [Theory,CV]
+tags: [Theory,CNN]
 ---
 
 # Part 1 简介
@@ -60,6 +60,7 @@ tags: [Theory,CV]
 * 原因: 乘法计算的时钟周期数要大于加法计算的时钟周期数）
 
 ---
+### 2.2 有用的链接
 
 * 卷积的benchmarks 
 	<https://github.com/soumith/convnet-benchmarks>
@@ -71,9 +72,9 @@ tags: [Theory,CV]
 ---	
 
 
-### talk is cheap show me the code !
+### YOU : talk is cheap show me the code !
 
-### 2.2 方法一: 滑动窗口实现
+### 2.3 方法一: 滑动窗口实现
 	
 ```python
 import numpy as np 
@@ -100,22 +101,16 @@ def conv2d_naive(input_, kernal_, stride =1, padding = 0):
 
 ```
 
-### 2.3 方法二: im2col方法实现
+### 2.4 方法二: im2col方法实现
 
 
-### 2.4 方法三: Winograd 方法
+### 2.5 方法三: Winograd方法实现
 
 
-### 2.4 方法四： 
+### 2.6 方法四: FTT方法实现
 ---
 
 # 特征抽取
-
----
-# 1x1卷积
-
----
-# 异形卷积
 
 ---
 
