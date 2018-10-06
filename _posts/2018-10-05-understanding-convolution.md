@@ -63,11 +63,17 @@ tags: [Theory,CNN]
 ### 2.2 有用的链接
 
 * 卷积的benchmarks 
+
 	<https://github.com/soumith/convnet-benchmarks>
+
 * 介绍GEMM过程
+
 	<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
+
 * im2col的论文
+
 	<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
+	
 
 ---	
 
