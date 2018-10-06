@@ -36,11 +36,6 @@ tags: [Theory,CV]
 # Part 2 原理和代码实现
 
 ### 2.1 四种方式介绍
-0. benchmarks
-* benchmarks 请参考
-
-<https://github.com/soumith/convnet-benchmarks>
-	
 
 1. 滑动窗口
 * 最容易实现的方法
@@ -53,9 +48,6 @@ tags: [Theory,CV]
 * 卷积过程转化成了 GEMM 过程（被各种极致优化）
 * 可以参考
 
-<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
-<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
-
 3. FFT
 * 傅里叶变换和快速傅里叶变化是在经典图像处理里面经常使用的计算方法
 * 在神经网络不常见到
@@ -66,6 +58,18 @@ tags: [Theory,CV]
 * cudnn 中计算卷积就使用了该方法
 * 思想: 更多的加法计算来减少乘法计算
 * 原因: 乘法计算的时钟周期数要大于加法计算的时钟周期数）
+
+---
+
+* 卷积的benchmarks 
+	<https://github.com/soumith/convnet-benchmarks>
+* 介绍GEMM过程
+	<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
+* im2col的论文
+	<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
+
+---	
+
 
 ### talk is cheap show me the code !
 
