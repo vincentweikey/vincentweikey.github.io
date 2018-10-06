@@ -39,9 +39,8 @@ tags: [Theory,CV]
 0. benchmarks
 * benchmarks 请参考
 
-	<https://github.com/soumith/convnet-benchmarks>
+<https://github.com/soumith/convnet-benchmarks>
 	
-* 后面的代码实现并不完全严谨
 
 1. 滑动窗口
 * 最容易实现的方法
@@ -54,11 +53,8 @@ tags: [Theory,CV]
 * 卷积过程转化成了 GEMM 过程（被各种极致优化）
 * 可以参考
 
-	<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
-
-* 论文
-
-	<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
+<https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/>
+<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
 
 3. FFT
 * 傅里叶变换和快速傅里叶变化是在经典图像处理里面经常使用的计算方法
