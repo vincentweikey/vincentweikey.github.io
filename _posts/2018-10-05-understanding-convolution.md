@@ -37,9 +37,11 @@ tags: [Theory,CV]
 
 ### 2.1 四种方式介绍
 0. benchmarks
-	benchmarks 请参考
-		<https://github.com/soumith/convnet-benchmarks>
-	后面的代码实现并不完全严谨
+* benchmarks 请参考
+
+	<https://github.com/soumith/convnet-benchmarks>
+	
+* 后面的代码实现并不完全严谨
 
 1. 滑动窗口
 	* 最容易实现的方法
@@ -70,7 +72,6 @@ tags: [Theory,CV]
 ### 2.2 方法一: 滑动窗口实现
 	
 ```python
-
 import numpy as np 
 
 # calculate output shape 
