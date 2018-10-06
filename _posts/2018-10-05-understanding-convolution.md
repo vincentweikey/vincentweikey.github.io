@@ -18,9 +18,10 @@ tags: [Theory,CV]
 
 ### 相关阅读 
 
-[推荐一下Christopher Olah 的理解卷积的blog](http://colah.github.io/posts/2014-07-Understanding-Convolutions/)
-[数学的论证参考](https://www.dsprelated.com/freebooks/mdft/Convolution.html)
-
+* 推荐一下Christopher Olah 的理解卷积的blog
+<http://colah.github.io/posts/2014-07-Understanding-Convolutions/>
+* 数学的论证参考
+<https://www.dsprelated.com/freebooks/mdft/Convolution.html>
 ### 本文将介绍卷积在计算机图像处理上的应用，所以特定限定条件:
 * 离散的 
 * 2-维卷积 (注: 2-维的卷积相当于depth=1 的 3-维的卷积)
