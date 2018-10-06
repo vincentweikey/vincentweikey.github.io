@@ -35,10 +35,10 @@ tags: [Theory,CNN]
 --- 
 # Part 2 原理和代码实现
 
-### 2.1 四种方式介绍
+### 2.1 四种方式简单介绍
 
 1. 滑动窗口
-* 最容易实现的方法
+* 最直观的方法
 * 大规模加速比较困难
 * 某些特定场景下速度比较快
 
@@ -73,14 +73,14 @@ tags: [Theory,CNN]
 * im2col的论文
 
 	<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
-	
 
 ---	
 
+### 2.3 代码实现（python 2.7 with numpy）
 
-### YOU : talk is cheap show me the code !
+### YOU : Talk is cheap show me the code !
 
-### 2.3 方法一: 滑动窗口实现
+##### 2.3.1 方法一: 滑动窗口实现
 	
 ```python
 import numpy as np 
@@ -107,13 +107,13 @@ def conv2d_naive(input_, kernal_, stride =1, padding = 0):
 
 ```
 
-### 2.4 方法二: im2col方法实现
+##### 2.3.2 方法二: im2col方法实现
 
 
-### 2.5 方法三: Winograd方法实现
+##### 2.3.3 方法三: Winograd方法实现
 
 
-### 2.6 方法四: FTT方法实现
+##### 2.3.4 方法四: FTT方法实现
 ---
 
 # 特征抽取
