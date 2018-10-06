@@ -1,8 +1,9 @@
 ---
-title: 卷积(Convolution)的个人理解
-teaser: 本篇将介绍:(1)两种计算卷积的方式 (2)一些个人的卷积实用技巧(3)一些对于卷积的理解
+
+title: 卷积
+teaser: 卷积(Convolution)的个人理解
 category: intro
-tags: [Theory, CV]
+tags: [Theory,CV]
 
 ---
 
