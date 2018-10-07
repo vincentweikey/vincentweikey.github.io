@@ -183,6 +183,55 @@ def conv2d_im2col(input_, kernal_, stride =1, padding = 0):
 	return col_matrix.reshape(out.shape[0],out.shape[1],order='F')
 
 ```
+### 2.3.3 方法三: FFT方法实现
+
+* 使用到numpy的FFT库
+
+	<https://docs.scipy.org/doc/numpy/reference/routines.fft.html>
+
+```python 
+
+def FFT_convolve(input_,kernal_):
+	# calculate the FFT trans size
+	T_size = np.array(input_.shape)+np.array(kernal_.shape)-1
+	# ceil doc : https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.ceil.html
+	F_size = 2**np.ceil(np.log2(T_size)).astype(int)
+	F_slice = tuple([slice(0, int(item)) for item in F_size])
+
+	new_input_ = np.fft.fft2(input_, F_size)
+	new_kernal_ = np.fft.fft2(kernal_, F_size)
+	output_ = np.fft.ifft2(new_input_*new_kernal_)[F_slice].copy()
+	# output is a expand matrix which bigger than the result you suppose
+	return np.array(output_.real, np.int32)
+
+```
+
+### 2.3.4 Final : 运行方法
+
+```python 
+
+def demo_1():
+	input_ = np.diag([1, 10, 3, 5, 1])
+	kernal_ = np.diag([1, 2, 1])
+	return conv2d_naive(input_, kernal_, stride =1, padding = 0)
+
+def demo_2():
+	input_ = np.diag([1, 1, 1, 1, 1])
+	kernal_ = np.diag([1, 1, 1])
+	# stride must equal 1 in my demo code
+	return conv2d_im2col(input_, kernal_, stride =1, padding = 0)
+
+def demo_3():
+	input_ = np.diag([1, 10, 3, 5, 1])
+	kernal_ = np.diag([1, 2, 1,])
+	return FFT_convolve(input_, kernal_)
+
+print demo_1()
+print demo_2()
+print demo_3()
+
+``` 
+
 ---
 
 # 卷积可以解决的问题
