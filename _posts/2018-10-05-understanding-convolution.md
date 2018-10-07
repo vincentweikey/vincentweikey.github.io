@@ -76,7 +76,7 @@ tags: [Theory,CNN]
 #### 2.1.4 Winograd
 * cudnn中计算卷积就使用了该方法.
 * CNN里面越来越多的1×1卷积和depthwise卷积被加入,Winograd卷积的价值也越来越小了.
-* 可以实现极高的一个加速比，举个例子，Winograd变换对于3×3卷积，最高可以实现9倍的加速比,但精度损失严重. 
+* 可以实现极高的一个加速比，举个例子，Winograd变换对于3×3卷积，最高可以实现9倍的加速比,但精度损失严重.
 
 
 ---
@@ -93,6 +93,10 @@ tags: [Theory,CNN]
 * im2col的论文
 
 	<https://hal.inria.fr/file/index/docid/112631/filename/p1038112283956.pdf>
+
+* winograd的python实现
+	
+	<https://github.com/andravin/wincnn>
 
 ---	
 
